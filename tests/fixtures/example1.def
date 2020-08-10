@@ -1,0 +1,23 @@
+/**
+ *
+ */
+
+define Example1 with Example2, Example3, Routes
+define Example2 with load, test
+define Example3 with test
+
+define load
+
+define /routes/ciao with Example2
+{
+    load;
+    Example2 test;
+}
+
+define Routes
+    with /routes/top
+       , /routes/left
+       , /routes/ciao
+
+define /routes/top
+define /routes/left

@@ -1,0 +1,14 @@
+{
+  "chmod": "0755",
+  "main": "bin/define",
+  "output": "dist/define.phar",
+  "directories": ["src"],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["test", "tests"],
+      "in": "vendor"
+    }
+  ],
+  "stub": true
+}

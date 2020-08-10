@@ -1,0 +1,52 @@
+{
+    "name": "javanile/define",
+    "description": "Micro DSL language.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "francescobianco",
+            "email": "bianco@javanile.org"
+        }
+    ],
+    "require": {
+        "php": "^7.2.9",
+        "gene-sis/lime": "*",
+        "nette/tokenizer": "^3.1",
+        "php-webdriver/webdriver": "^1.8",
+        "se/selenium-server-standalone": "^3.141",
+        "symfony/console": "^4.0|^5.0",
+        "symfony/filesystem": "^4.0|^5.0",
+        "symfony/process": "^4.2|^5.0",
+        "webmozart/glob": "^4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "bin": [
+        "bin/propan"
+    ],
+    "autoload": {
+        "psr-4": {
+            "JavanileDefine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JavanileDefine\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+if (file_exists(__DIR__.'/../../../autoload.php')) {
+    require __DIR__.'/../../../autoload.php';
+} else {
+    require __DIR__.'/../vendor/autoload.php';
+}
+
+$app = new JavanileDefine\Application();
+$cmd = new JavanileDefine\DefaultCommand();
+
+$app->add($cmd);
+
+$app->setDefaultCommand($cmd->getName(), true);
+
+try {
+    $app->run();
+} catch (Exception $e) {
+    echo $e->getMessage() . "\n";
+    exit(1);
+}
