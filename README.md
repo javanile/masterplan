@@ -1,6 +1,6 @@
 # Masterplan (ALPHA)
 
-Masterplan is the tool for create business automation on your favorite automation platform usign YAML files
+Masterplan is the tool for creating business automation on your favorite automation platform usign YAML files
 
 ## Benefits
 
