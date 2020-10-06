@@ -1,4 +1,4 @@
 # Contributors
 
-- Francesco Bianco [![Francesco Bianco - LinkedIn](https://simpleicons.org/icons/linkedin.svg)](https://www.linkedin.com/in/bianco1981/)
+- Francesco Bianco [<img alt="Francesco Bianco - LinkedIn" src="https://simpleicons.org/icons/linkedin.svg" width="32">](https://www.linkedin.com/in/bianco1981/)
 - Gabriele Belloni <https://www.linkedin.com/in/gabri-belloni/>
