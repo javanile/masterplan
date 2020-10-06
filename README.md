@@ -14,7 +14,7 @@ Masterplan is the tool for creating business automation on your favorite automat
 
 ## Contact us
 
-Please demostrate your interest on the project creating a issue usign this link
+Please demonstrate your interest on the project creating a issue using this link
 
 - <https://github.com/javanile/masterplan/issues/new>
 
