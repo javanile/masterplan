@@ -1,7 +1,7 @@
 {
   "chmod": "0755",
-  "main": "bin/define",
-  "output": "dist/define.phar",
+  "main": "bin/masterplan",
+  "output": "dist/masterplan.phar",
   "directories": ["src"],
   "finder": [
     {
