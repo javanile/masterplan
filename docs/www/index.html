@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://www.terraform.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.">
+
+    <link rel="canonical" href="https://www.terraform.io/index.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.terraform.io/assets/images/favicons/apple-touch-icon-13180a24.png">
+    <link rel="icon" type="image/png" href="https://www.terraform.io/assets/images/favicons/favicon-32x32-62171ffd.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.terraform.io/assets/images/favicons/favicon-16x16-2821bcc8.png" sizes="16x16">
+    <link rel="manifest" href="https://www.terraform.io/android-manifest.json">
+    <link rel="mask-icon" href="https://www.terraform.io/assets/images/favicons/safari-pinned-tab-bab846e1.svg" color="#5C4EE5">
+    <meta name="msapplication-config" content="/microsoft-tile.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+        <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://www.terraform.io/assets/images/og-image-large-e60c82fe.png">
+
+        <meta name="twitter:site" content="@HashiCorp">
+    <meta name="twitter:creator" content="@HashiCorp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.terraform.io/index.html">
+    <meta property="og:title" content="Terraform by HashiCorp">
+    <meta property="og:site_name" content="Terraform by HashiCorp">
+    <meta property="og:description" content="Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.">
+
+    <title>Terraform by HashiCorp</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./index_files/wxf7mfi.css">
+    <link href="./index_files/application-dc674041.css" rel="stylesheet">
+
+    <!-- Site scripts -->
+    <!--[if lt IE 9]><script src="/assets/javascripts/ie-compat-c141a02d.js" defer="defer"></script><![endif]-->
+    <script type="text/javascript" async="" src="./index_files/xdc.js"></script><script type="text/javascript" async="" src="./index_files/munchkin.js"></script><script type="text/javascript" async="" src="./index_files/js"></script><script type="text/javascript" async="" src="./index_files/munchkin(1).js"></script><script type="text/javascript" async="" src="./index_files/gtm.js"></script><script type="text/javascript" async="" src="./index_files/analytics.js"></script><script type="text/javascript" async="" src="./index_files/analytics.min.js"></script><script src="./index_files/application-05b1cfd7.js" defer="defer"></script>
+    <script src="./index_files/alert-banner-b7809937.js" defer="defer"></script>
+    <script src="./index_files/home-hero-cfd4d2f4.js" defer="defer"></script>
+
+    <!-- Analytics scrpts -->
+    <script defer="">
+      !function(){var e=window.analytics=window.analytics||[];if(!e.initialize)if(e.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{e.invoked=!0,e.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"],e.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),e.push(a),e}};for(var t=0;t<e.methods.length;t++){var a=e.methods[t];e[a]=e.factory(a)}e.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(t,a)},e.SNIPPET_VERSION="4.0.0",e.load("EnEETDWhfxp1rp09jVvJr66LdvwI6KVP")}}();var om597a24292a958,om597a24292a958_poll=function(){var e=0;return function(t,a){clearInterval(e),e=setInterval(t,a)}}();!function(e,t,a){if(e.getElementById(a))om597a24292a958_poll(function(){if(window.om_loaded&&!om597a24292a958)return(om597a24292a958=new OptinMonsterApp).init({s:"35109.597a24292a958",staging:0,dev:0,beta:0})},25);else{var n=!1,o=e.createElement("script");o.id=a,o.src="//a.optnmstr.com/app/js/api.min.js",o.async=!0,o.onload=o.onreadystatechange=function(){if(!(n||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState))try{n=om_loaded=!0,(om597a24292a958=new OptinMonsterApp).init({s:"35109.597a24292a958",staging:0,dev:0,beta:0}),o.onload=o.onreadystatechange=null}catch(e){}},(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}}(document,0,"omapi-script");
+    </script><script id="omapi-script" src="./index_files/api.min.js" async=""></script>
+
+    
+  <style type="text/css">@-webkit-keyframes omBounce{0%,20%,50%,80%,to{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes omBounce{0%,20%,50%,80%,to{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}.om-animation-bounce{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:omBounce;animation-name:omBounce}@-webkit-keyframes omBounceIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05);transform:scale(1.05)}70%{-webkit-transform:scale(.9);transform:scale(.9)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes omBounceIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05);transform:scale(1.05)}70%{-webkit-transform:scale(.9);transform:scale(.9)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}.om-animation-bounce-in{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omBounceIn;animation-name:omBounceIn}@-webkit-keyframes omBounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}60%{opacity:1;-webkit-transform:translateY(30px);transform:translateY(30px)}80%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes omBounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}60%{opacity:1;-webkit-transform:translateY(30px);transform:translateY(30px)}80%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.om-animation-bounce-in-down{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omBounceInDown;animation-name:omBounceInDown}@-webkit-keyframes omBounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes omBounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-bounce-in-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omBounceInLeft;animation-name:omBounceInLeft}@-webkit-keyframes omBounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes omBounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-bounce-in-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omBounceInRight;animation-name:omBounceInRight}@-webkit-keyframes omBounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);transform:translateY(10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes omBounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);transform:translateY(10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.om-animation-bounce-in-up{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omBounceInUp;animation-name:omBounceInUp}@-webkit-keyframes omFlash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes omFlash{0%,50%,to{opacity:1}25%,75%{opacity:0}}.om-animation-flash{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:omFlash;animation-name:omFlash}@-webkit-keyframes omFlip{0%{-webkit-transform:perspective(800px) translateZ(0) rotateY(0) scale(1);transform:perspective(800px) translateZ(0) rotateY(0) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@keyframes omFlip{0%{-webkit-transform:perspective(800px) translateZ(0) rotateY(0) scale(1);transform:perspective(800px) translateZ(0) rotateY(0) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}.om-animation-flip{-webkit-animation-duration:1s;animation-duration:1s;-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:omFlip;animation-name:omFlip}@-webkit-keyframes omFlipInX{0%{-webkit-transform:perspective(800px) rotateX(90deg);transform:perspective(800px) rotateX(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateX(-10deg);transform:perspective(800px) rotateX(-10deg)}70%{-webkit-transform:perspective(800px) rotateX(10deg);transform:perspective(800px) rotateX(10deg)}to{-webkit-transform:perspective(800px) rotateX(0deg);transform:perspective(800px) rotateX(0deg);opacity:1}}@keyframes omFlipInX{0%{-webkit-transform:perspective(800px) rotateX(90deg);transform:perspective(800px) rotateX(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateX(-10deg);transform:perspective(800px) rotateX(-10deg)}70%{-webkit-transform:perspective(800px) rotateX(10deg);transform:perspective(800px) rotateX(10deg)}to{-webkit-transform:perspective(800px) rotateX(0deg);transform:perspective(800px) rotateX(0deg);opacity:1}}.om-animation-flip-down{-webkit-animation-duration:1s;animation-duration:1s;-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:omFlipInX;animation-name:omFlipInX}@-webkit-keyframes omFlipInY{0%{-webkit-transform:perspective(800px) rotateY(90deg);transform:perspective(800px) rotateY(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateY(-10deg);transform:perspective(800px) rotateY(-10deg)}70%{-webkit-transform:perspective(800px) rotateY(10deg);transform:perspective(800px) rotateY(10deg)}to{-webkit-transform:perspective(800px) rotateY(0deg);transform:perspective(800px) rotateY(0deg);opacity:1}}@keyframes omFlipInY{0%{-webkit-transform:perspective(800px) rotateY(90deg);transform:perspective(800px) rotateY(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateY(-10deg);transform:perspective(800px) rotateY(-10deg)}70%{-webkit-transform:perspective(800px) rotateY(10deg);transform:perspective(800px) rotateY(10deg)}to{-webkit-transform:perspective(800px) rotateY(0deg);transform:perspective(800px) rotateY(0deg);opacity:1}}.om-animation-flip-side{-webkit-animation-duration:1s;animation-duration:1s;-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:omFlipInY;animation-name:omFlipInY}@-webkit-keyframes omLightSpeedIn{0%{-webkit-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}60%{-webkit-transform:translateX(-20%) skewX(30deg);transform:translateX(-20%) skewX(30deg);opacity:1}80%{-webkit-transform:translateX(0) skewX(-15deg);transform:translateX(0) skewX(-15deg);opacity:1}to{-webkit-transform:translateX(0) skewX(0deg);transform:translateX(0) skewX(0deg);opacity:1}}@keyframes omLightSpeedIn{0%{-webkit-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}60%{-webkit-transform:translateX(-20%) skewX(30deg);transform:translateX(-20%) skewX(30deg);opacity:1}80%{-webkit-transform:translateX(0) skewX(-15deg);transform:translateX(0) skewX(-15deg);opacity:1}to{-webkit-transform:translateX(0) skewX(0deg);transform:translateX(0) skewX(0deg);opacity:1}}.om-animation-light-speed{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omLightSpeedIn;animation-name:omLightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}@-webkit-keyframes omPulse{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes omPulse{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}.om-animation-pulse{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:omPulse;animation-name:omPulse}@-webkit-keyframes omRollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}to{opacity:1;-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg)}}@keyframes omRollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}to{opacity:1;-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg)}}.om-animation-roll-in{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omRollIn;animation-name:omRollIn}@-webkit-keyframes omRotateIn{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes omRotateIn{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omRotateIn;animation-name:omRotateIn}@-webkit-keyframes omRotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes omRotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-down-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omRotateInDownLeft;animation-name:omRotateInDownLeft}@-webkit-keyframes omRotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes omRotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-down-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omRotateInDownRight;animation-name:omRotateInDownRight}@-webkit-keyframes omRotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes omRotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-up-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omRotateInUpLeft;animation-name:omRotateInUpLeft}@-webkit-keyframes omRotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes omRotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-up-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omRotateInUpRight;animation-name:omRotateInUpRight}@-webkit-keyframes omRubberBand{0%{-webkit-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(.75);transform:scaleX(1.25) scaleY(.75)}40%{-webkit-transform:scaleX(.75) scaleY(1.25);transform:scaleX(.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(.85);transform:scaleX(1.15) scaleY(.85)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes omRubberBand{0%{-webkit-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(.75);transform:scaleX(1.25) scaleY(.75)}40%{-webkit-transform:scaleX(.75) scaleY(1.25);transform:scaleX(.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(.85);transform:scaleX(1.15) scaleY(.85)}to{-webkit-transform:scale(1);transform:scale(1)}}.om-animation-rubber-band{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:omRubberBand;animation-name:omRubberBand}@-webkit-keyframes omShake{0%,to{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);transform:translateX(10px)}}@keyframes omShake{0%,to{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);transform:translateX(10px)}}.om-animation-shake{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:omShake;animation-name:omShake}@-webkit-keyframes omSlideInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes omSlideInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.om-animation-slide-in-down{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omSlideInDown;animation-name:omSlideInDown}@-webkit-keyframes omSlideInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes omSlideInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-slide-in-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omSlideInLeft;animation-name:omSlideInLeft}@-webkit-keyframes omSlideInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes omSlideInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-slide-in-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omSlideInRight;animation-name:omSlideInRight}@-webkit-keyframes omSwing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes omSwing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}.om-animation-swing{-webkit-animation-duration:1s;animation-duration:1s;-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:omSwing;animation-name:omSwing}@-webkit-keyframes omTada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-3deg);transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);transform:scale(1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);transform:scale(1.1) rotate(-3deg)}to{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}@keyframes omTada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-3deg);transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);transform:scale(1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);transform:scale(1.1) rotate(-3deg)}to{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}.om-animation-tada{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omTada;animation-name:omTada}@-webkit-keyframes omWobble{0%{-webkit-transform:translateX(0);transform:translateX(0)}15%{-webkit-transform:translateX(-25%) rotate(-5deg);transform:translateX(-25%) rotate(-5deg)}30%{-webkit-transform:translateX(20%) rotate(3deg);transform:translateX(20%) rotate(3deg)}45%{-webkit-transform:translateX(-15%) rotate(-3deg);transform:translateX(-15%) rotate(-3deg)}60%{-webkit-transform:translateX(10%) rotate(2deg);transform:translateX(10%) rotate(2deg)}75%{-webkit-transform:translateX(-5%) rotate(-1deg);transform:translateX(-5%) rotate(-1deg)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes omWobble{0%{-webkit-transform:translateX(0);transform:translateX(0)}15%{-webkit-transform:translateX(-25%) rotate(-5deg);transform:translateX(-25%) rotate(-5deg)}30%{-webkit-transform:translateX(20%) rotate(3deg);transform:translateX(20%) rotate(3deg)}45%{-webkit-transform:translateX(-15%) rotate(-3deg);transform:translateX(-15%) rotate(-3deg)}60%{-webkit-transform:translateX(10%) rotate(2deg);transform:translateX(10%) rotate(2deg)}75%{-webkit-transform:translateX(-5%) rotate(-1deg);transform:translateX(-5%) rotate(-1deg)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-wobble{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:omWobble;animation-name:omWobble}.om-content-lock{color:transparent!important;text-shadow:rgba(0,0,0,.5) 0 0 10px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;filter:url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");-webkit-filter:blur(10px);-ms-filter:blur(10px);-o-filter:blur(10px);filter:blur(10px)}html.om-mobile-position,html.om-mobile-position body{position:fixed!important}html.om-ios-form,html.om-ios-form body{-webkit-transform:translateZ(0)!important;transform:translateZ(0)!important;-webkit-overflow-scrolling:touch!important;height:100%!important;overflow:auto!important}html.om-position-popup body{overflow:hidden!important}html.om-position-floating-top{transition:padding-top .5s ease!important}html.om-position-floating-bottom{transition:padding-bottom .5s ease!important}html.om-reset-dimensions{height:100%!important;width:100%!important}.om-verification-confirmation{font-family:Lato,Arial,Helvetica,sans-serif;position:fixed;border-radius:10px;bottom:20px;left:20px;padding:10px 20px;opacity:0;transition:opacity .3s ease-in;background:#85bf31;color:#fff;font-size:18px;font-weight:700;z-index:9999}</style><script src="./index_files/webfont.js" async=""></script></head>
+
+  <body id="page-home" class="">
+    <div class="g-alert-banner   has-large-tag">
+  <div class="g-container">
+    <a href="https://www.hashicorp.com/webinars/provision-infrastructure-using-cloud-development-kit-for-terraform/">
+      <div class="tag g-type-label">
+        <span>Live Webinar</span>
+      </div>
+      <div class="text g-type-body-small-strong">
+        <span>Write an infrastructure application in TypeScript and Python using CDK for Terraform</span>
+      </div>
+        <div class="link-text g-type-body-small-strong">
+          <span>Register Now</span>
+        </div>
+    </a>
+  </div>
+  <span class="close">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM15 9l-6 6M9 9l6 6" stroke="#000"></path></svg>
+  </span>
+</div>
+
+
+    <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+      <polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+    </symbol>
+    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+      <path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+    </symbol>
+  </defs>
+</svg>
+<div class="hidden-print mega-nav-sandbox">
+  <div class="mega-nav-banner">
+    <div class="container">
+      <div class="mega-nav-banner-item">
+        <a class="mega-nav-banner-logo" href="https://www.hashicorp.com/"><img src="./index_files/logo-hashicorp-wordmark-bbed0e8a.svg" alt="HashiCorp Logo"></a>
+      </div>
+      <div class="mega-nav-banner-item">
+        <p class="mega-nav-tagline"><span class="visible-xs text-muted">Learn the</span><span class="hidden-xs text-muted">Learn how Terraform fits into the</span></p>
+        <div id="#mega-nav" class="mega-nav">
+          <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+            <div class="mega-nav-ctrl-items">
+              <img src="./index_files/logo-hashicorp-a66fda95.svg" alt="HashiCorp Logo">
+              <strong>HashiCorp Stack</strong>
+              <span class="mega-nav-icon-outline">
+                <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span>
+              </span>
+            </div>
+          </button>
+          <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl">
+            <div class="mega-nav-body">
+              <button type="button" id="mega-nav-close" class="mega-nav-close"><svg class="mega-nav-icon mega-nav-icon-close" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-close"></use></svg><span class="visuallyhidden">Close</span></button>
+              <div class="mega-nav-body-header">
+                <div class="mega-nav-body-header-item">
+                  <h2 class="mega-nav-h1">Provision, Secure, Connect, and&nbsp;Run</h2>
+                  <p class="mega-nav-h2">Any infrastructure for any&nbsp;application</p>
+                </div>
+                <div class="mega-nav-body-header-item">
+                  <a href="https://www.hashicorp.com/" class="mega-nav-btn"><img src="./index_files/logo-hashicorp-a66fda95.svg" alt="HashiCorp Logo"> Learn the HashiCorp Enterprise&nbsp;Stack <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg></a>
+                </div>
+              </div>
+              <div class="mega-nav-body-grid">
+                <div class="mega-nav-body-grid-item">
+                  <h3 class="mega-nav-h3">Provision</h3>
+                  <ul class="mega-nav-grid">
+                    <li>
+                      <a href="https://www.vagrantup.com/" class="mega-nav-grid-item mega-nav-grid-item-vagrant">
+                        <div class="mega-nav-grid-item-img">
+                          <img src="./index_files/logo-vagrant-a7ab5898.svg" alt="Vagrant Logo">
+                        </div>
+                        <b>Vagrant</b>
+                        <ul>
+                          <li><span class="mega-nav-tag">Build</span></li>
+                          <li><span class="mega-nav-tag">Test</span></li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.packer.io/" class="mega-nav-grid-item mega-nav-grid-item-packer">
+                        <div class="mega-nav-grid-item-img">
+                          <img src="./index_files/logo-packer-cb3b9b94.svg" alt="Packer Logo">
+                        </div>
+                        <b>Packer</b>
+                        <ul>
+                          <li><span class="mega-nav-tag">Package</span></li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.terraform.io/" class="mega-nav-grid-item mega-nav-grid-item-terraform is-active">
+                        <div class="mega-nav-grid-item-img">
+                          <img src="./index_files/logo-terraform-ff69eaae.svg" alt="Terraform Logo">
+                        </div>
+                        <b>Terraform</b>
+                        <ul>
+                          <li><span class="mega-nav-tag">Provision</span></li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-nav-body-grid-item">
+                  <h3 class="mega-nav-h3">Secure</h3>
+                  <ul class="mega-nav-grid">
+                    <li>
+                      <a href="https://www.vaultproject.io/" class="mega-nav-grid-item mega-nav-grid-item-vault">
+                        <div class="mega-nav-grid-item-img">
+                          <img src="./index_files/logo-vault-0f83e3d2.svg" alt="Vault Logo">
+                        </div>
+                        <b>Vault</b>
+                        <ul>
+                          <li><span class="mega-nav-tag">Secure</span></li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-nav-body-grid-item">
+                  <h3 class="mega-nav-h3">Connect</h3>
+                  <ul class="mega-nav-grid">
+                    <li>
+                      <a href="https://www.consul.io/" class="mega-nav-grid-item mega-nav-grid-item-consul">
+                        <div class="mega-nav-grid-item-img">
+                          <img src="./index_files/logo-consul-c77f6844.svg" alt="Consul Logo">
+                        </div>
+                        <b>Consul</b>
+                        <ul>
+                          <li><span class="mega-nav-tag">Connect</span></li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-nav-body-grid-item">
+                  <h3 class="mega-nav-h3">Run</h3>
+                  <ul class="mega-nav-grid">
+                    <li>
+                      <a href="https://www.nomadproject.io/" class="mega-nav-grid-item mega-nav-grid-item-nomad">
+                        <div class="mega-nav-grid-item-img">
+                          <img src="./index_files/logo-nomad-c4c148be.svg" alt="Nomad Logo">
+                        </div>
+                        <b>Nomad</b>
+                        <ul>
+                          <li><span class="mega-nav-tag">Run</span></li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-nav-body-footer">
+                <p>Seven elements of the modern Application Lifecycle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div id="header" class="navigation navbar-static-top hidden-print">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="navbar-header">
+              <div class="navbar-brand">
+                <a href="https://www.terraform.io/">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251 61" class="logo" height="50">
+  <path class="text" fill="#000" fill-rule="nonzero" d="M81.78 19.54h-8.89v-5.31H96.7v5.31h-8.9v26.53h-6"></path>
+  <path class="text" fill="#000" fill-rule="nonzero" d="M102.19 41.77c2.415-.012 4.814-.383 7.12-1.1l.91 4.4c-2.745.99-5.642 1.49-8.56 1.48-7.31 0-9.85-3.39-9.85-9V31.4c0-4.92 2.2-9.08 9.66-9.08s9.13 4.35 9.13 9.37v5h-13v1.2c.05 2.78 1.05 3.88 4.59 3.88zM97.65 32h7.41v-1.18c0-2.2-.67-3.73-3.54-3.73s-3.87 1.53-3.87 3.73V32zm28.54-4.33c-2.148.97-4.217 2.102-6.19 3.39v15h-5.83V22.79h4.92l.38 2.58c1.897-1.284 3.955-2.313 6.12-3.06l.6 5.36zm14.24 0c-2.14.97-4.204 2.103-6.17 3.39v15h-5.83V22.79h4.92l.38 2.58c1.897-1.284 3.955-2.313 6.12-3.06l.58 5.36zm19.51 18.4h-4.78l-.43-1.58c-2.062 1.342-4.47 2.058-6.93 2.06-4.25 0-6.07-2.92-6.07-6.93 0-4.73 2.06-6.55 6.79-6.55h5.59v-2.44c0-2.58-.72-3.49-4.45-3.49-2.17.024-4.33.266-6.45.72l-.72-4.45c2.606-.72 5.296-1.09 8-1.1 7.31 0 9.47 2.58 9.47 8.41l-.02 15.35zm-5.83-8.8h-4.3c-1.91 0-2.44.53-2.44 2.29s.53 2.34 2.34 2.34c1.544-.024 3.058-.436 4.4-1.2v-3.43zm23.75-19.79c-1.1-.237-2.224-.364-3.35-.38-2.29 0-2.63 1-2.63 2.77v2.92h5.93l-.33 4.64h-5.59v18.64h-5.83V27.43h-3.73v-4.64h3.73v-3.25c0-4.83 2.25-7.22 7.41-7.22 1.69-.006 3.372.22 5 .67l-.61 4.49zm11.38 29.07c-8 0-10.13-4.4-10.13-9.18v-5.88c0-4.78 2.15-9.18 10.13-9.18s10.13 4.4 10.13 9.18v5.88c.01 4.78-2.15 9.18-10.13 9.18zm0-19.27c-3.11 0-4.3 1.39-4.3 4v6.26c0 2.63 1.2 4 4.3 4 3.1 0 4.3-1.39 4.3-4V31.3c0-2.63-1.19-4.02-4.3-4.02zm25.14.39c-2.14.97-4.204 2.103-6.17 3.39v15h-5.83V22.79h4.92l.38 2.58c1.897-1.284 3.954-2.313 6.12-3.06l.58 5.36zm16.02 18.4V29.82c0-1.24-.53-1.86-1.86-1.86-2.137.254-4.2.934-6.07 2v16.11h-5.83V22.79h4.45l.57 2c2.906-1.47 6.088-2.315 9.34-2.48 1.843-.174 3.6.82 4.4 2.49 2.91-1.49 6.104-2.34 9.37-2.49 3.87 0 5.26 2.72 5.26 6.88v16.88h-5.83V29.82c0-1.24-.53-1.86-1.86-1.86-2.14.236-4.208.917-6.07 2v16.11h-5.87z"></path>
+  <path class="rect-dark" fill="#4040B2" d="M36.4 39.13l16.4-9.46V10.72L36.4 20.2"></path>
+  <path class="rect-light" fill="#5C4EE5" d="M18.2 10.72l16.4 9.48v18.93l-16.4-9.47"></path>
+  <path class="rect-light" fill="#5C4EE5" d="M0 19.09l16.4 9.47V9.62L0 .15m18.2 50.53l16.4 9.47V41.21l-16.4-9.47"></path>
+</svg>
+
+                </a>
+              </div>
+              <button class="navbar-toggle" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+
+            <div class="buttons hidden-xs">
+              <nav class="navigation-links" role="navigation">
+                <ul class="main-links nav navbar-nav navbar-right">
+                  <li class="visible-sm"><span><a href="https://www.terraform.io/index.html">Info</a><svg width="9" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M8.811 1.067a.612.612 0 0 0 0-.884.655.655 0 0 0-.908 0L4.5 3.491 1.097.183a.655.655 0 0 0-.909 0 .615.615 0 0 0 0 .884l3.857 3.75a.655.655 0 0 0 .91 0l3.856-3.75z" fill-rule="evenodd"></path></svg></span>
+                    <ul class="dropdown">
+                      <li><a data-track="intro" href="https://www.terraform.io/intro/index.html">Intro</a></li>
+                      <li><a data-track="learn" href="https://learn.hashicorp.com/terraform/">Tutorials</a></li>
+                      <li><a data-track="community" href="https://www.terraform.io/community.html">Community</a></li>
+                      <li><a data-track="enterprise" href="https://www.hashicorp.com/products/terraform/?utm_source=oss&amp;utm_medium=header-nav&amp;utm_campaign=terraform">Enterprise</a></li>
+                    </ul>
+                  </li>
+                  <li class="hidden-sm"><a data-track="intro" href="https://www.terraform.io/intro/index.html">Intro</a></li>
+                  <li class="hidden-sm"><a data-track="learn" href="https://learn.hashicorp.com/terraform/">Tutorials</a></li>
+                  <li><span><a data-track="docs" href="https://www.terraform.io/docs/index.html">Docs</a><svg width="9" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M8.811 1.067a.612.612 0 0 0 0-.884.655.655 0 0 0-.908 0L4.5 3.491 1.097.183a.655.655 0 0 0-.909 0 .615.615 0 0 0 0 .884l3.857 3.75a.655.655 0 0 0 .91 0l3.856-3.75z" fill-rule="evenodd"></path></svg></span>
+                    <ul class="dropdown">
+                                      <li><a data-track="docs-home" href="https://www.terraform.io/docs/index.html">Docs Home</a></li>
+                <li><a data-track="docs-cli" href="https://www.terraform.io/docs/cli-index.html">Terraform CLI</a></li>
+                <li><a data-track="docs-cloud" href="https://www.terraform.io/docs/cloud/index.html">Terraform Cloud</a></li>
+                <li><a data-track="docs-ent" href="https://www.terraform.io/docs/enterprise/index.html">Terraform Enterprise</a></li>
+                <li><a data-track="docs-providers" href="https://www.terraform.io/docs/providers/index.html">Providers</a></li>
+                <li><a data-track="docs-glossary" href="https://www.terraform.io/docs/glossary.html">Glossary</a></li>
+                <li><a data-track="docs-guides" href="https://www.terraform.io/guides/index.html">Guides and Whitepapers</a></li>
+                <li><a data-track="docs-registry" href="https://www.terraform.io/docs/registry/index.html">Registry</a></li>
+                <li><a data-track="docs-gh-actions" href="https://learn.hashicorp.com/tutorials/terraform/github-actions">GitHub Actions</a></li>
+                <li><a data-track="docs-extending" href="https://www.terraform.io/docs/extend/index.html">Extending Terraform</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="hidden-sm"><a data-track="community" href="https://www.terraform.io/community.html">Community</a></li>
+                  <li class="hidden-sm"><a data-track="enterprise" href="https://www.hashicorp.com/products/terraform/?utm_source=oss&amp;utm_medium=header-nav&amp;utm_campaign=terraform">Enterprise</a></li>
+                  <li>
+                    <a data-track="download" href="https://www.terraform.io/downloads.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <path d="M28 0H0v28h28V0zM13.8 22.9L7 17.3l2-2.4 3.2 2.6V7h3.2v10.5l3.2-2.6 2 2.4L13.8 22.9z"></path>
+</svg>
+ Download
+                    </a>
+                  </li>
+                  <li>
+                    <a data-track="github" href="https://github.com/hashicorp/terraform">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <path d="M28 0H0v28h11.4c0 0 0-1.3 0-2.4C7.7 26.4 7 23.9 7 23.9 6.4 22.4 5.5 22 5.5 22c-1.2-0.8 0.1-0.8 0.1-0.8 1.3 0.1 2 1.4 2 1.4 1.2 2 3 1.4 3.8 1.1 0.1-0.8 0.5-1.4 0.9-1.8 -2.9-0.3-6-1.5-6-6.5 0-1.4 0.5-2.6 1.3-3.5C7.5 11.5 7 10.2 7.8 8.4c0 0 1.1-0.4 3.6 1.3 1-0.3 2.2-0.4 3.3-0.4 1.1 0 2.2 0.2 3.3 0.4 2.5-1.7 3.6-1.3 3.6-1.3 0.7 1.8 0.3 3.1 0.1 3.5 0.8 0.9 1.3 2.1 1.3 3.5 0 5-3.1 6.1-6 6.5 0.5 0.4 0.9 1.2 0.9 2.4 0 1.8 0 3.7 0 3.7H28V0z"></path>
+</svg>
+ GitHub
+                    </a>
+                  </li>
+                   <li id="terraform-overview-sign-in-link">
+                   <div>
+                    <a data-track="sign-in" href="https://app.terraform.io/session?utm_source=docs_banner">
+                      Sign In
+                    </a>
+                    </div>
+                  </li>
+                   <li id="terraform-overview-sign-up-link" class="hidden-md hidden-sm">
+                   <div>
+                    <a data-track="sign-up" href="https://app.terraform.io/signup/account?utm_source=docs_banner">
+                      Create Account
+                    </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay"></div>
+
+<aside class="sidebar" role="navigation">
+  <div class="sidebar-header">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251 61" class="logo" height="42">
+  <path class="text" fill="#000" fill-rule="nonzero" d="M81.78 19.54h-8.89v-5.31H96.7v5.31h-8.9v26.53h-6"></path>
+  <path class="text" fill="#000" fill-rule="nonzero" d="M102.19 41.77c2.415-.012 4.814-.383 7.12-1.1l.91 4.4c-2.745.99-5.642 1.49-8.56 1.48-7.31 0-9.85-3.39-9.85-9V31.4c0-4.92 2.2-9.08 9.66-9.08s9.13 4.35 9.13 9.37v5h-13v1.2c.05 2.78 1.05 3.88 4.59 3.88zM97.65 32h7.41v-1.18c0-2.2-.67-3.73-3.54-3.73s-3.87 1.53-3.87 3.73V32zm28.54-4.33c-2.148.97-4.217 2.102-6.19 3.39v15h-5.83V22.79h4.92l.38 2.58c1.897-1.284 3.955-2.313 6.12-3.06l.6 5.36zm14.24 0c-2.14.97-4.204 2.103-6.17 3.39v15h-5.83V22.79h4.92l.38 2.58c1.897-1.284 3.955-2.313 6.12-3.06l.58 5.36zm19.51 18.4h-4.78l-.43-1.58c-2.062 1.342-4.47 2.058-6.93 2.06-4.25 0-6.07-2.92-6.07-6.93 0-4.73 2.06-6.55 6.79-6.55h5.59v-2.44c0-2.58-.72-3.49-4.45-3.49-2.17.024-4.33.266-6.45.72l-.72-4.45c2.606-.72 5.296-1.09 8-1.1 7.31 0 9.47 2.58 9.47 8.41l-.02 15.35zm-5.83-8.8h-4.3c-1.91 0-2.44.53-2.44 2.29s.53 2.34 2.34 2.34c1.544-.024 3.058-.436 4.4-1.2v-3.43zm23.75-19.79c-1.1-.237-2.224-.364-3.35-.38-2.29 0-2.63 1-2.63 2.77v2.92h5.93l-.33 4.64h-5.59v18.64h-5.83V27.43h-3.73v-4.64h3.73v-3.25c0-4.83 2.25-7.22 7.41-7.22 1.69-.006 3.372.22 5 .67l-.61 4.49zm11.38 29.07c-8 0-10.13-4.4-10.13-9.18v-5.88c0-4.78 2.15-9.18 10.13-9.18s10.13 4.4 10.13 9.18v5.88c.01 4.78-2.15 9.18-10.13 9.18zm0-19.27c-3.11 0-4.3 1.39-4.3 4v6.26c0 2.63 1.2 4 4.3 4 3.1 0 4.3-1.39 4.3-4V31.3c0-2.63-1.19-4.02-4.3-4.02zm25.14.39c-2.14.97-4.204 2.103-6.17 3.39v15h-5.83V22.79h4.92l.38 2.58c1.897-1.284 3.954-2.313 6.12-3.06l.58 5.36zm16.02 18.4V29.82c0-1.24-.53-1.86-1.86-1.86-2.137.254-4.2.934-6.07 2v16.11h-5.83V22.79h4.45l.57 2c2.906-1.47 6.088-2.315 9.34-2.48 1.843-.174 3.6.82 4.4 2.49 2.91-1.49 6.104-2.34 9.37-2.49 3.87 0 5.26 2.72 5.26 6.88v16.88h-5.83V29.82c0-1.24-.53-1.86-1.86-1.86-2.14.236-4.208.917-6.07 2v16.11h-5.87z"></path>
+  <path class="rect-dark" fill="#4040B2" d="M36.4 39.13l16.4-9.46V10.72L36.4 20.2"></path>
+  <path class="rect-light" fill="#5C4EE5" d="M18.2 10.72l16.4 9.48v18.93l-16.4-9.47"></path>
+  <path class="rect-light" fill="#5C4EE5" d="M0 19.09l16.4 9.47V9.62L0 .15m18.2 50.53l16.4 9.47V41.21l-16.4-9.47"></path>
+</svg>
+
+  </div>
+
+  <ul class="nav sidebar-nav">
+    <li><a data-track="intro" href="https://www.terraform.io/intro/index.html">Intro</a></li>
+    <li><a data-track="learn" href="https://learn.hashicorp.com/terraform/">Learn</a></li>
+    <li><a data-track="community" href="https://www.terraform.io/community.html">Community</a></li>
+    <li><a data-track="enterprise" href="https://www.hashicorp.com/products/terraform/?utm_source=oss&amp;utm_medium=header-nav&amp;utm_campaign=terraform">Enterprise</a></li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <ul class="external nav sidebar-nav">
+    <li>
+      <a data-track="download" href="https://www.terraform.io/downloads.html">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <path d="M28 0H0v28h28V0zM13.8 22.9L7 17.3l2-2.4 3.2 2.6V7h3.2v10.5l3.2-2.6 2 2.4L13.8 22.9z"></path>
+</svg>
+ Download
+      </a>
+    </li>
+    <li>
+      <a data-track="github" href="https://github.com/hashicorp/terraform">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <path d="M28 0H0v28h11.4c0 0 0-1.3 0-2.4C7.7 26.4 7 23.9 7 23.9 6.4 22.4 5.5 22 5.5 22c-1.2-0.8 0.1-0.8 0.1-0.8 1.3 0.1 2 1.4 2 1.4 1.2 2 3 1.4 3.8 1.1 0.1-0.8 0.5-1.4 0.9-1.8 -2.9-0.3-6-1.5-6-6.5 0-1.4 0.5-2.6 1.3-3.5C7.5 11.5 7 10.2 7.8 8.4c0 0 1.1-0.4 3.6 1.3 1-0.3 2.2-0.4 3.3-0.4 1.1 0 2.2 0.2 3.3 0.4 2.5-1.7 3.6-1.3 3.6-1.3 0.7 1.8 0.3 3.1 0.1 3.5 0.8 0.9 1.3 2.1 1.3 3.5 0 5-3.1 6.1-6 6.5 0.5 0.4 0.9 1.2 0.9 2.4 0 1.8 0 3.7 0 3.7H28V0z"></path>
+</svg>
+ GitHub
+      </a>
+    </li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <ul class="nav sidebar-nav">
+    <li><a data-track="docs" href="https://www.terraform.io/docs/index.html">Docs:</a></li>
+                    <li><a data-track="docs-home" href="https://www.terraform.io/docs/index.html">Docs Home</a></li>
+                <li><a data-track="docs-cli" href="https://www.terraform.io/docs/cli-index.html">Terraform CLI</a></li>
+                <li><a data-track="docs-cloud" href="https://www.terraform.io/docs/cloud/index.html">Terraform Cloud</a></li>
+                <li><a data-track="docs-ent" href="https://www.terraform.io/docs/enterprise/index.html">Terraform Enterprise</a></li>
+                <li><a data-track="docs-providers" href="https://www.terraform.io/docs/providers/index.html">Providers</a></li>
+                <li><a data-track="docs-glossary" href="https://www.terraform.io/docs/glossary.html">Glossary</a></li>
+                <li><a data-track="docs-guides" href="https://www.terraform.io/guides/index.html">Guides and Whitepapers</a></li>
+                <li><a data-track="docs-registry" href="https://www.terraform.io/docs/registry/index.html">Registry</a></li>
+                <li><a data-track="docs-gh-actions" href="https://learn.hashicorp.com/tutorials/terraform/github-actions">GitHub Actions</a></li>
+                <li><a data-track="docs-extending" href="https://www.terraform.io/docs/extend/index.html">Extending Terraform</a></li>
+
+  </ul>
+
+</aside>
+
+
+    
+<div class="terraform-overview">
+    <section id="home-hero">
+        <div class="g-container">
+            <div>
+                <div>
+                    <div>
+                      <a class="notification no-bg g-type-body-small" href="https://www.hashicorp.com/blog/announcing-hashicorp-terraform-cloud-business">
+                            <span class="g-type-tag-label">New</span> Introducing the Terraform Cloud Business tier <span><svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM13.3536 4.35355C13.5488 4.15829 13.5488 3.84171 13.3536 3.64645L10.1716 0.464466C9.97631 0.269204 9.65973 0.269204 9.46447 0.464466C9.2692 0.659728 9.2692 0.976311 9.46447 1.17157L12.2929 4L9.46447 6.82843C9.2692 7.02369 9.2692 7.34027 9.46447 7.53553C9.65973 7.7308 9.97631 7.7308 10.1716 7.53553L13.3536 4.35355ZM1 4.5H13V3.5H1V4.5Z" fill="#5F43E9"></path>
+                                </svg>
+                            <span>
+                        </span></span></a>
+                        <h1 class="g-type-display-1">Terraform</h1>
+                        <p class="g-type-body-large">Use Infrastructure as Code to provision and manage any cloud, infrastructure, or service</p>
+                        <a href="https://app.terraform.io/signup/account?utm_source=iopage&amp;utm_campaign=tf_cloud_ga" class="button primary download">
+                            Sign up for Cloud
+                        </a>
+                        <a href="https://www.terraform.io/downloads.html" class="button dark-outline">
+                            Download CLI</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="controls">
+                        <div data-index="0" class="playing">
+                            <span class="g-type-buttons-and-standalone-links">Cloud</span>
+                            <div class="progress-bar"><span style="width: 40.801%;"></span></div>
+                        </div>
+                        <div data-index="1" class="">
+                            <span class="g-type-buttons-and-standalone-links">CLI</span>
+                            <div class="progress-bar"><span style="width: 0%;"></span></div>
+                        </div>
+                    </div>
+                    <div class="videos">
+                        <div class="active">
+                            <div class="bar-buttons">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div>
+                                <video muted="muted" class="loaded">
+                                    <source src="https://www.datocms-assets.com/2885/1568036870-1567204661-terraform-overview-hero-cloud.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="bar-buttons">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <video muted="muted" class="loaded">
+                                <source src="https://www.datocms-assets.com/2885/1568037655-1567721088-terraform-overview-hero-cli.mp4" type="video/mp4">
+                            </video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="infrastructure-as-code" class="g-section bg-light">
+        <div class="g-container">
+            <div class="intro">
+                <h2 class="g-type-display-2">Deliver infrastructure as code with Terraform</h2>
+            </div>
+            <div class="g-text-asset">
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Write declarative configuration files</h3>
+
+                        <div class="check">
+                            <ul class="g-type-body">
+                                <li>Collaborate and share configurations</li>
+                                <li>Evolve and version your infrastructure</li>
+                                <li>Automate provisioning</li>
+                            </ul>
+                        </div>
+                        <p class="g-type-body">Define infrastructure as code to manage the full lifecycle — create new resources, manage existing ones, and destroy those no longer needed.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <picture>
+                                    <source type="image/png" srcset="
+                                        /assets/images/terraform-overview/declarative-config-files-3e0d3e28.png 300w,
+                                        /assets/images/terraform-overview/declarative-config-files@2x-fa879271.png 704w,
+                                        /assets/images/terraform-overview/declarative-config-files@4x-1bd3b268.png 1256w">
+                                    <img src="./index_files/declarative-config-files@4x-1bd3b268.png" alt="Write Declarative Configuration Files">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g-text-asset reverse">
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Plan and predict changes</h3>
+
+                        <div class="check">
+                            <ul class="g-type-body">
+                                <li>Clearly mapped resource dependencies</li>
+                                <li>Separation of plan and apply</li>
+                                <li>Consistent, repeatable workflow</li>
+                            </ul>
+                        </div>
+                        <p class="g-type-body">Terraform provides an elegant user experience for operators to safely and predictably make
+                            changes to
+                            infrastructure.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <picture>
+                                    <source type="image/png" srcset="
+                                          /assets/images/terraform-overview/plan-changes-to-infrastructure-bc677c2e.png 300w,
+                                          /assets/images/terraform-overview/plan-changes-to-infrastructure@2x-bc677c2e.png 704w,
+                                          /assets/images/terraform-overview/plan-changes-to-infrastructure@4x-e8cbc845.png 1256w">
+                                    <img src="./index_files/plan-changes-to-infrastructure@4x-e8cbc845.png" alt="Plan Changes to Cloud Infrastructure">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g-text-asset">
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Create reproducible infrastructure</h3>
+                        <div class="check">
+                            <ul class="g-type-body">
+                                <li>Reproducible production, staging, and development environments</li>
+                                <li>Shared modules for common infrastructure patterns</li>
+                                <li>Combine multiple providers consistently</li>
+
+                            </ul>
+                        </div>
+                        <p class="g-type-body">Terraform makes it easy to re-use configurations for similar infrastructure, helping you
+                            avoid mistakes and save time.</p>
+                        <a href="https://registry.terraform.io/browse/providers" class="button">View All Providers</a>
+                    </div>
+                </div>
+                <div>
+                    <div><div><div>
+                        <picture>
+                            <source type="image/png" srcset="
+                                  /assets/images/terraform-overview/infrastructure-providers-4a7356aa.png 300w,
+                                  /assets/images/terraform-overview/infrastructure-providers@2x-91407375.png 704w,
+                                  /assets/images/terraform-overview/infrastructure-providers@4x-91e3d4c9.png 1256w">
+                            <img src="./index_files/infrastructure-providers@4x-91e3d4c9.png" alt="Terraform Overview Infrastucture Providers">
+                        </picture>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Terraform Cloud -->
+    <section id="terraform-cloud" class="g-section collapse-bottom">
+        <div class="g-container">
+            <div class="intro">
+                <h2 class="g-type-display-2">Enhanced Workflow for Teams with Terraform Cloud</h2>
+                <p class="g-type-body-large">Terraform Cloud is a free to use SaaS application that provides the best workflow for writing and
+                    building
+                    infrastructure as code with Terraform. </p>
+            </div>
+            <div class="g-text-asset reverse">
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Share infrastructure as code</h3>
+                        <p class="g-type-body">Empower your team to rapidly review, comment,
+                            and iterate on Infrastructure as Code.</p>
+                        <div class="check">
+                            <ul class="g-type-body">
+                                <li>State management <span class="shrink">(storage, viewing, history, and locking)</span></li>
+                                <li>Web UI for viewing and approving Terraform runs</li>
+                                <li>Collaborative Runs</li>
+                                <li>Private module registry</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div class="has-borders">
+                                <picture>
+                                    <source type="image/png" srcset="
+                                      /assets/images/terraform-overview/workflow-collaboration-372cc077.png 300w,
+                                      /assets/images/terraform-overview/workflow-collaboration@2x-c9daea17.png 704w,
+                                      /assets/images/terraform-overview/workflow-collaboration@4x-66d002b4.png 1256w">
+                                    <img src="./index_files/workflow-collaboration@4x-66d002b4.png" alt="Share Infrastructure as Code with Terraform">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g-text-asset">
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Automate consistent workflows</h3>
+                        <p class="g-type-body">Create a pipeline for provisioning Infrastructure as Code</p>
+                        <div class="check">
+                            <ul class="g-type-body">
+                                <li>VCS integration <span class="shrink">(Azure DevOps, Bitbucket, GitHub, and GitLab)</span></li>
+                                <li>Enable GitOps workflow</li>
+                                <li>Remote operations — perform Terraform runs in a consistent, immutable environment</li>
+                                <li>Notifications for run events <span class="shrink">(via Slack or webhooks)</span></li>
+                                <li>Full HTTP API for integrating with other tools and services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div class="has-borders">
+                                <picture>
+                                    <source type="image/png" srcset="
+                                      /assets/images/terraform-overview/automate-the-provisioning-lifecycle-ab77f0ff.png 300w,
+                                      /assets/images/terraform-overview/automate-the-provisioning-lifecycle@2x-2c469511.png 704w,
+                                      /assets/images/terraform-overview/automate-the-provisioning-lifecycle@4x-5cc6a17f.png 1256w">
+                                    <img src="./index_files/automate-the-provisioning-lifecycle@4x-5cc6a17f.png" alt="Terraform - Automate the Provisioning Lifecycle">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="https://app.terraform.io/signup/account?utm_source=iopage&amp;utm_campaign=tf_cloud_ga" class="button primary download">
+                    Sign up for Terraform Cloud
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="pricing" class="g-section collapse-top">
+        <div class="g-container">
+            <div class="intro">
+                <h2 class="g-type-display-2">Terraform for Every Team</h2>
+                <p class="g-type-body-large">Organizations looking for enhanced division of responsibilities or automatic policy enforcement can purchase the Team and Governance upgrades for Terraform Cloud. Start for free and upgrade to suit the needs of your team as you grow.</p>
+            </div>
+            <div class="g-pricing-tile">
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Free</h3>
+                        <p class="g-type-body">Get started on Terraform Cloud for free. Automation and collaboration features to empower individuals and small teams, including VCS integration, remote operations, and state management.</p>
+                        <p class="price g-type-body-small">
+                            <span class="g-type-display-2">$0</span>
+                            Up to 5 users
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Team &amp; Governance</h3>
+                        <p class="g-type-body">These tiers introduce basic governance with team management and role based access control (RBAC). Set up custom workspace permissions, or even provisioning policies as code with <a href="https://www.hashicorp.com/sentinel">Sentinel</a>.</p>
+                        <p class="price g-type-body-small">
+                            Starting at
+                            <span class="g-type-display-2">$20</span>
+                            user/month
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3 class="g-type-display-3">Business</h3>
+                        <p class="g-type-body">Use the features and scale of Terraform Enterprise, without hosting it yourself. Connect to public or private clouds. Set up more concurrent runs, SSO, and audit logs.</p>
+                        <p class="price g-type-body-small sales-override">
+                            <span class="g-type-display-4"><a href="https://www.hashicorp.com/request-pricing/terraform/" target="_blank" rel="noopener noreferrer">Contact Sales</a></span> for more information
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="https://www.hashicorp.com/products/terraform/pricing" class="button primary download" target="_blank" rel="noopener noreferrer">
+                    See More Detailed Pricing Information
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="how-terraform-works" class="g-section bg-light">
+        <div class="g-container">
+            <div class="intro">
+                <h2 class="g-type-display-2">
+                    How Terraform Works
+                </h2>
+            </div>
+            <div class="g-tabbed-content g-text-asset" id="how-terraform-works-tabs">
+                <ul class="tab-list">
+                    <li class="active" id="tab-cloud"><a href="https://www.terraform.io/#cloud" aria-selected="true" aria-controls="tab-cloud">Cloud</a></li>
+                    <li id="tab-cli"><a href="https://www.terraform.io/#cli" aria-selected="false" aria-controls="tab-cloud">CLI</a></li>
+                </ul>
+                <div class="tab-panel active" id="tab-panel-cloud" aria-hidden="false" aria-labelledby="tab-cloud" data-hashi-tab="tab-cloud">
+                    <div class="tab-content">
+                        <picture>
+                            <source type="image/png" srcset="
+                                    /assets/images/terraform-overview/cloud-howitworks-v4-1x-a067daf3.png 300w,
+                                    /assets/images/terraform-overview/cloud-howitworks-v4-2x-0cb5bdab.png 704w">
+                            <img src="./index_files/cloud-howitworks-v4-2x-0cb5bdab.png" alt="Terraform Cloud - How It Works Diagram">
+                        </picture>
+                    </div>
+                    <div class="tab-content">
+                        <h3 class="g-type-display-3">Terraform Cloud</h3>
+                            <h4 class="g-type-display-4">Write Infrastructure as Code</h4>
+                            <p class="g-type-body">Terraform users define infrastructure in a simple, human-readable configuration language
+                                called HCL
+                                (HashiCorp
+                                Configuration Language). Users can write unique HCL configuration files or borrow
+                                existing templates
+                                from
+                                the public
+                                module registry.</p>
+                            <h4 class="g-type-display-4">Manage Configuration Files in VCS</h4>
+                            <p class="g-type-body">Most users will store their configuration files in a version control system (VCS) repository and
+                                connect that repository
+                                to a
+                                Terraform
+                                Cloud workspace. With that connection in place, users can borrow best practices from software
+                                engineering to
+                                version
+                                and
+                                iterate on infrastructure as code, using VCS and Terraform Cloud as a delivery pipeline
+                                for
+                                infrastructure.
+                            </p>
+                            <h4 class="g-type-display-4">Automate Provisioning</h4>
+                            <p class="g-type-body">When you push changes to a connected VCS repository, Terraform Cloud will automatically trigger a plan
+                                in any workspace connected to that repository.
+                                This plan can be
+                                reviewed for
+                                safety and accuracy in the Terraform UI, then it can be applied to provision the
+                                specified
+                                infrastructure.
+                            </p>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-panel-cli" aria-hidden="true" aria-labelledby="tab-cli" data-hashi-tab="tab-cli">
+                    <div class="tab-content">
+                        <picture>
+                            <source type="image/png" srcset="
+                                      /assets/images/terraform-overview/cli-howitworks-1x-43424a9b.png 300w,
+                                      /assets/images/terraform-overview/cli-howitworks-2x-0b1a3eb0.png 704w,
+                                      /assets/images/terraform-overview/cli-howitworks-1581d13e.png 1256w">
+                            <img src="./index_files/cli-howitworks-2x-0b1a3eb0.png" alt="Terraform CLI - How It Works Diagram">
+                        </picture>
+                    </div>
+                    <div class="tab-content">
+                        <h3 class="g-type-display-3">CLI</h3>
+                            <p class="g-type-body">Terraform allows infrastructure to be expressed as code in a simple, human readable
+                                language called HCL (HashiCorp
+                                Configuration Language). Terraform CLI reads configuration files and provides an
+                                execution plan of changes, which can
+                                be reviewed for safety and then applied and provisioned. Extensible providers allow
+                                Terraform to manage a broad range
+                                of resources, including hardware, IaaS, PaaS, and SaaS services.</p>
+                            <div class="check">
+                                <ul class="g-type-body">
+                                    <li>Infrastructure as Code</li>
+                                    <li>200+ available providers</li>
+                                    <li>Provision any infrastructure</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="fostering-community" class="g-section">
+        <div class="g-container">
+            <div class="g-text-asset reverse">
+                <div>
+                    <div>
+                        <h2 class="g-type-display-2">Strong Community</h2>
+                        <div class="check">
+                            <ul>
+                                <li><a href="https://github.com/hashicorp/terraform">25,000+ Commits</a></li>
+                                <li><a href="https://registry.terraform.io/">1,000+ Modules</a></li>
+                                <li><a href="https://www.terraform.io/docs/providers/">200+ Providers</a></li>
+                            </ul>
+                        </div>
+                        <p class="g-type-body">Open Source projects benefit from the scrutiny of a broad and diverse user base. Keeping the
+                            code
+                            available helps to teach and empower the community of users, while it also provides an easy
+                            mechanism for
+                            feedback, improvement, and customization. </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="video-embed">
+                        <iframe width="100%" height="315" src="./index_files/4BCR7Yx4k4o.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <p class="caption g-type-body-small">Co-Founders Mitchell Hashimoto and Armon Dadgar explain HashiCorp’s
+                            commitment to open source</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <div id="footer" class="navigation hidden-print">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="footer-links nav navbar-nav">
+              <li><a href="https://www.terraform.io/intro/index.html">Intro</a></li>
+              <li><a href="https://www.terraform.io/docs/index.html">Docs</a></li>
+              <li><a href="https://www.terraform.io/docs/extend/index.html">Extend</a></li>
+              <li><a href="https://www.hashicorp.com/privacy">Privacy</a></li>
+              <li><a href="https://www.terraform.io/security.html">Security</a></li>
+              <li><a href="https://www.terraform.io/assets/files/press-kit.zip">Press Kit</a></li>
+            </ul>
+            <ul class="footer-links nav navbar-nav navbar-right">
+              <li><a href="https://github.com/hashicorp/terraform-website/edit/master/content/source/index.html.erb">Edit this page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": "Terraform",
+        "alternateName": "Terraform by HashiCorp",
+        "manufacturer": "HashiCorp",
+        "url": "https://www.terraform.io",
+        "logo": "https://www.terraform.io/assets/images/logo-hashicorp-3f10732f.svg",
+        "sameAs": [
+          "https://github.com/hashicorp/terraform"
+        ]
+      }
+    </script>
+  
+
+<ul id="gridlines-container" style="display: none;"><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li><li class="gridlines-container__grids" style="height: 25px;"></li></ul><ul id="columnlines-container" style="display: none;"><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li><li class="columnlines-container__grids" style="width: 8.33%;"></li></ul><script type="text/javascript" id="" src="./index_files/bizible.js"></script><img src="./index_files/ipv" style="display: none;"><img src="./index_files/u" style="display: none;"><div id="om-clc64wlzm54elmhgz7vd-holder"></div><div id="om-lr5jpzhdqhfyyzuro02a-holder"></div><img src="./index_files/u(1)" style="display: none;"></body></html>

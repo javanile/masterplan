@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d8bf540-8276-4fd7-b7e3-90b8d1f560eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/masterplan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/box.json.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/define.lime" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DefaultCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DefineParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tokenizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/example1.def" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Klood/Asendia/sugarcrm-hubspot-synchronization-channel" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,14 +45,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597055798932</updated>
-      <workItem from="1597055799990" duration="3337000" />
+      <workItem from="1597055799990" duration="4630000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1597066891849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597066891849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="525" y="121" width="860" height="871" key="CommitChangelistDialog2" timestamp="1597066891747">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="525" y="121" width="860" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1597066891747" />
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1597077141590">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1597077141590" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597066893211">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1597066893211" />
     <state x="624" y="196" width="672" height="678" key="search.everywhere.popup" timestamp="1597058325892">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
