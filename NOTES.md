@@ -6,3 +6,4 @@ Collection of notes taken during development activity
 - <https://www.andywingrave.com/>
 - <https://www.saikaza.xyz/>
 - list of expert <https://experts.zapier.com/>
+- <https://twitter.com/jeremyblalock?s=09>
